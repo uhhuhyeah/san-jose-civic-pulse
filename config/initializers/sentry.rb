@@ -6,7 +6,7 @@ Sentry.init do |config|
   config.breadcrumbs_logger = [ :active_support_logger, :http_logger ]
   config.send_default_pii = false
 
-  config.enable_logs = false
+  config.rails.structured_logging.enabled = false
   config.enabled_patches = []
 
   config.traces_sample_rate = 0.01
